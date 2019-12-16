@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+<meta charset="utf-8">
+<title>Lost in the Air</title>
+<link href="styles.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Alfa+Slab+One|Archivo+Black|Cantata+One|Cormorant|Lobster|Permanent+Marker|Playfair+Display+SC|Sanchez&display=swap" rel="stylesheet">
+</head>
+<body>
+<main>
+	<nav>
+        <span class="top">
+        <h1>Lost In the Air</h1>
+        <h2>Air Pen + Air Music</h2>
+        </span>
+        <pic>
+            <img src="main.jpg">
+        </pic>
+    </nav>
+    <article>
+        <h3>Concept</h3>
+        <p>
+            Communication happens almost every moment when we are awake and every where you could imagine. 
+            We talk; we read; we watch; we listen and we even communicate with ourselves when we think. 
+            In the world of design and technology, there are also many communication: serial communication, Bluetooth communication, wifi communication, physical communication, and etc. 
+            Even coding is a way of communication between coders and computers. 
+        </p>
+        <h4>Informational</h4>
+        <h6>Exchanges</h6>
+        <p>
+            Communication is a form of exchanging information. 
+            There are always two roles in communication: a communicator and a recipient. 
+            Successful communication is to convey the message from the communicator to the recipient and the recipient interpret what the message is in the way that communicator intends. 
+            Living in this society, we deeply knows that many communications fail. 
+            For example, people have trouble connecting to wifi, couples have fights because they couldn’t communicate well and etc. 
+        </p>
+        <h4>Language</h4>
+        <h6>Chall"enges</h6>
+        <a href="https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiIq47Hm7nmAhXBm-AKHZfGCWEQjRx6BAgBEAQ&url=https%3A%2F%2Fmedium.com%2F%40camilawm%2Fdimensions-of-language-b59a11c9a3fe&psig=AOvVaw0pa8_1KGe88X0TO3F5hSMb&ust=1576552952518545"><img src="language.png" link></a>
+        <p>
+            Language barriers also post a great force upon successful communication. 
+            The translation usually can not convey the full meaning. 
+            Whether we speak the same language or not, sometimes communication will still fail us. 
+            Even though the message was successfully delivered and interpreted, how do we know the recipients understand the same exact meaning as the communicator interprets it? 
+            I doubt that any communication is successful in the sense that the meaning of the message is intact during the communication. 
+            Even sometimes we could not translate the full thoughts in our brains into languages. 
+        </p>
+        <h4>Emotions</h4>
+        <h6>Translations</h6>
+        <a href="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiH15vmm7nmAhWKVN8KHURlDxwQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.verywellmind.com%2Femotional-pain-in-bipolar-depression-379835&psig=AOvVaw36cpClLa9Z_lmiWgKbxzJ1&ust=1576553017007430">
+        <img src=">emotion.jpg"></a>
+        <p>
+            Even expressing the correct meaning is difficult. Communicating emotion is even more difficult.
+            There is a famous quote in Chinese literature, written by LUXUN. He wrote, "人间悲欢并不相通。" 
+            My translation of this quote is "Human emotions are not tranlatable."
+            Even this tranlation is not enough to convey the poetic language in the qutato. 
+            I think this quote and the translation of this quote demonstrates the miscommunication/mistranslation in our daily life. 
+        </p>
+        <h3>Design and Technology:</h3>
+        <h5>Creative Tech Lab Final</h5>
+        <p>
+            Personally, I found this notion of mistranslation/ miscommunication is interesting because human has been communicated for thousands of years, yet not one of it is fully successful. 
+            Therefore, my final project for CT Lab, Lost in the Air : Air Pen + Air Music,  is a representation of this mistranslation/ miscommunication.
+        </p>
+        <p>
+            Lost in the Air : Air Pen + Air Music is an interactive installation that symbolize human miscommunication. 
+            It consists of two parts: an LED grid connected to a webcam that detects colors and a bluetooth speaker connected to a webcam that detects body gesture. 
+            There will be two participants on both sides trying to communicate with body gestures.
+        </p>
+        <h4>Body</h4>
+        <h6>Language</h6>
+        <p>
+            Body language is the most primitive and instinctive  language in human history.
+             Body language is not as complex as any other language but it is rather powerful. 
+             I use body gestures to represent the thoughts we have in our brains. 
+             Those body gestures will be detected by the webcam and translated into either visuals or music. 
+             Two different translations symbolize two different languages or two distinct way of thinking. 
+        </p>
+        <h4>Mechanism</h4>
+        <p>
+            The message will be sent to the other side through bluetooth communication and wifi communication. 
+            On the visual side, the participant who “speak” the visual language, will draw a message using body gestures. 
+            This message will show on the LED grid on the musical side. The participant will also hear the musical message sent from the other side. 
+            As for the music side, the participant who “speak” the musical language will use body gestures to generate a little “song” which will be sent to the visual side to be interpreted after the participant see the message on the LED grid. 
+        </p>
+        <h4>Symbolism</h4>
+        <p>
+            On the LED grid, there is a patterned mask that symbolize different interpretation because when the participant look at it from different angles, some of the LED will be covered by the mask and therefore the LED patterns will change based on angles. 
+            The mask is inspired by decode card in  the children's detective books, which you have to match the pattern in the card to the book in order to decode the message. 
+        </p>
+        <h3>Creative</h3>
+        <h5>Process</h5>
+        <p>
+            On the visual side, I used Processing and openCV to detect the brightest point of the canvas and Processing will send the location coordinates to Arudino.
+            Arduino will control which LED lights up. 
+        </p>
+        <video controls>
+            <source src="led_draw.mp4" type="video/mp4">
+        </video>
+        <video controls>
+        <source src="led_dark.mp4" type="video/mp4">
+        </video>
+        <video controls>
+        <source src="led.mp4" type="video/mp4">
+        </video>
+        <p>
+            On the musical side, I used p5js and ml5 library to detect the body pose. Each pose will trigger a different note. 
+        </p>
+        <video controls>
+            <source src="music.mp4" type="video/mp4">
+        </video>
+    </article>
+    
+
+</main>
+<footer>
+    Created by Elena Peng
+    For CT Studio 2019 Fall Final
+</footer>
+</body>	
+</html>
