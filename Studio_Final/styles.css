@@ -29,6 +29,7 @@ nav h1{
     padding-left:50px;
     padding-bottom:30px;
     font-family: 'Permanent Marker', cursive;
+    z-index:1;
 }
 nav h2{
     font-size:40px;
@@ -43,6 +44,7 @@ nav h2{
     padding-left:50px;
     padding-bottom:10px;
     font-family: 'Permanent Marker', cursive;
+    z-index:1;
 }
 /* nav h1,h2{
     background-color:red;
